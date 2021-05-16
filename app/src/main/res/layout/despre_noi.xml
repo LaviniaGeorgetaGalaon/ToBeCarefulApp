@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white"
+                android:id="@+id/back"
+                android:contentDescription="@null"/>
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar1"
+        android:id="@+id/sv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rr1">
+           <!-- <ImageView
+                android:layout_width="220dp"
+                android:layout_height="180dp"
+                android:background="@mipmap/transm"
+                android:id="@+id/poza3"
+                />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/mare"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/changa"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="7dp"
+                android:text="Dragi pacienți, "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/infTV"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/changa"
+                android:layout_below="@+id/mare"
+                android:textSize="17dp"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="7dp"
+                android:text=" \t\t\t Această aplicație este pentru pacienții cu tuberculoză (TBC). Aici veţi găsi informații despre boală și tratarea ei, sfaturi privind felul în care puteți face față bolii si un loc unde va puteți gestiona pastilele, programarile. Veți gasi toate instrumentele necesare uite într-un singur loc astfel scăpând de problema prea multor locuri unde vă notați informațiile. \n
+\t\t\t În timpul procesului de elaborare i-am întrebat pe pacienții cu tuberculoză ce ar vrea să știe despre boală. Răspunsurile lor au contribuit la definirea conținutului aplicatiei. Am găsit împreună răspunsuri la cele
+mai frecvente întrebări. Rezultatul întregului proces este această broșură, ce are rolulde a răspunde nevoii de informare în legătură cu tuberculoza în rândul pacienților.
+\n\n\n
+">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+</RelativeLayout>

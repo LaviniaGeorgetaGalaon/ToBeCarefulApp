@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="15dp"
+                android:background="@mipmap/back"
+                android:id="@+id/back"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Cum se tratează TBC?"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/purple_700"
+                android:textColorHint="@color/purple_500"
+                android:textColorLink="@color/purple_500"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar1"
+        android:id="@+id/sv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rr1">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/vin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/poza3"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/infTV"
+                android:layout_below="@id/poza3"
+                android:textColor="@color/black"
+                android:fontFamily="@font/changa"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="7dp"
+                android:text=" \t\t\t Boala este tratată cu o combinație de diferite tipuri de medicamente împotriva
+tuberculozei, majoritatea tablete. Tratamentul și consultaţiile de control sunt
+gratuite. Majoritatea pacienților trebuie să ia medicamente vreme de șase luni,
+dar, uneori, tratamentul durează mai mult. Dacă suferi de tuberculoză rezistentă,
+tratamentul poate dura și 2 ani.\n\n
+\t\t\tEste foarte important să iei medicamentele atât timp cât îţi spune medicul. Dacă
+încetezi să iei medicamentele prea devreme, s-ar putea să te îmbolnăvești din
+nou. Bacteriile tuberculozei pot deveni rezistente, iar medicamentele pot fi mai
+puțin eficiente, dacă trebuie să începi din nou tratamentul după ce l-ai oprit prea
+devreme.\n\n
+\t\t\tÎn majoritatea cazurilor, pacienții încep tratamentul în spital și apoi îl continuă
+acasă. Dacă ai o formă contagioasă de tuberculoză, va trebui să stai în spital până
+când nu mai ești contagios. Unele persoane stau în spital între o lună și trei luni,
+altele stau mai mult. În spital cadrele medicale pot să supravegheze îndeaproape
+felul în care tolerezi pastilele şi să se asigure că medicamentele sunt eficiente și că
+te simți mai bine. Ca pacient, ai dreptul la sprijin și la consultații pe tot parcursul
+tratamentului. Medicul tău și alte cadre medicale te pot ajuta în diferite moduri.
+Sănătatea și starea ta de bine sunt responsabilitatea ta şi a lor.\n
+">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

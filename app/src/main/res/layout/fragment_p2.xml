@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="15dp"
+                android:background="@mipmap/back"
+                android:id="@+id/back"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Îi veți îmbolnăvi pe alții cu TBC?"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/purple_700"
+                android:textColorHint="@color/purple_500"
+                android:textColorLink="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar1"
+        android:id="@+id/sv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rr1">
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="180dp"
+                android:background="@mipmap/transm"
+                android:id="@+id/poza3"
+                />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_toRightOf="@id/poza3"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/changa"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="7dp"
+                android:text="Îți poți proteja prietenii urmând tratamentul așa cum ți-a fost prescris doctorul "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/infTV"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/changa"
+                android:layout_below="@+id/poza3"
+                android:textSize="17dp"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="7dp"
+                android:text=" \t\t\t Majoritatea pacienților cu tuberculoză au TBC pulmonară. Doar când ai forma pulmonară contagioasă poţi transmite boala; majoritatea bacteriilor tuberculozei vor fi
+omorâte după aproximativ 2-3 săptămâni de luat medicamente eficiente de tratare
+a TBC și nu le vei mai transmite boala și altora. O anumită formă de tuberculoză
+pulmonară şi toate formele extrapulmonare nu sunt molipsitoare.\n\n
+\t\t\t În România, dacă suferi de tuberculoză pulmonară sau dacă se bănuiește că suferi
+de această boală, de obicei ești izolat într-un salon de spital până când nu îi mai
+poţi infecta pe alții. Pentru a ști sigur că tuberculoza de care suferi nu se mai poate
+transmite, personalul medical va face niște teste și le va analiza într-un laborator,
+pentru a afla dacă sunteți « negativi ».\n\n
+\t\t\t Acest lucru înseamnă că, în momentul în care vei părăsi salonul unde ești izolat,
+boala nu mai este contagioasă.\n
+\t\t\t În România, sistemul de sănătate este obligat să se asigure că toate persoanele care
+suferă de TBC au parte de tratament, care este gratuit. Pentru a identifica toate
+persoanele care pot fi infectate, pacienților li se cere să dea numele persoanelor cu
+care au avut contact direct. Acestea sunt chemate la unităţile medicale și li se cere
+să facă gratuit analize pentru TBC, fără să li se spună de cine au putut fi infectați.
+Dacă ai copii sau dacă ai avut un contact direct cu copiii înainte să se descopere că
+suferi de TBC, este posibil ca aceștia să trebuiască să ia medicamente împotriva TBC
+pentru o vreme (de obicei şase luni), lucru pe care îl hotărăşte medicul. Se face asta
+pentru a se preveni îmbolnăvirea ulterioară a copiilor.\n
+">
+
+            </TextView>
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="15dp"
+                android:background="@mipmap/back"
+                android:id="@+id/back"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Întrebări puse de alți pacienți"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/purple_700"
+                android:textColorHint="@color/purple_500"
+                android:textColorLink="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar1">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20sp"
+        android:background="@mipmap/sorin"
+        />
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="20sp"
+        android:background="@mipmap/silviu"
+        />
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/image2"
+        android:layout_marginTop="20sp"
+        android:background="@mipmap/dc"
+        />
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/image3"
+        android:layout_marginTop="20sp"
+        android:background="@mipmap/nu"
+        />
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/image4"
+        android:layout_marginTop="20sp"
+        android:background="@mipmap/gheorghe"
+        />
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/image5"
+        android:layout_marginTop="20sp"
+        android:background="@mipmap/complet"
+        />
+    <ImageView
+        android:id="@+id/image7"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/image6"
+        android:layout_marginTop="20sp"
+        android:background="@mipmap/incurabil"
+        />
+    <TextView
+        android:id="@+id/signUpTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/comfortaa"
+        android:text=" "
+        android:textColor="#B3B1B5"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

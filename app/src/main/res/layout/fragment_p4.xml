@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Detalii">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="15dp"
+                android:background="@mipmap/back"
+                android:id="@+id/back"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Efecte secundare ale tratamentului"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/purple_700"
+                android:textColorHint="@color/purple_500"
+                android:textColorLink="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar1"
+        android:id="@+id/sv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/toolbar1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rr1">
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:background="@mipmap/efs"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/poza3"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/infTV"
+                android:layout_below="@+id/poza3"
+                android:textColor="@color/black"
+                android:fontFamily="@font/changa"
+                android:textSize="17dp"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="7dp"
+                android:text=" \t\t\t Majoritatea efectelor secundare nu sunt grave și, chiar dacă sunt neplăcute
+și enervante, nu sunt periculoase. Îți reamintim că este important să îi spui
+medicului de orice schimbare a stării tale de sănătate.Dacă partea albă a ochilor devine galbenă, dacă ai dureri mari de stomac, erupții
+cutanate (bubiţe pe piele) pe o mare parte din corp au dacă ai probleme de vedere
+şi/sau de auz, consultă imediat un medic.\n\n
+ \t\t\t►Este important să continui să mănânci
+regulat; acest lucru te va ajuta să îți revii mai repede
+și te poate ajuta și să previi sau să diminuezi greața.
+Un stomac gol poate să accentueze starea de greață.
+Dacă ai în continuare o stare accentuată de greață,
+medicul îți poate prescrie medicamente pentru a o
+diminua.\n
+\t\t\t►Amețeala și oboseala pot fi atât un simptom al bolii
+de care suferi, cât și un efect secundar al medicamentelor. Prin urmare, este foarte important să te
+odihnești suficient. Când te odihnești, corpul tău
+luptă mai eficient împotriva bolii.\n
+\t\t\t►S-ar putea să nu îți fie foame din cauza tuberculozei
+sau din cauza medicamentelor. Este foarte important
+să continui să mănânci; încearcă să mănânci bine
+pentru a ajuta corpul să lupte împotriva bolii. Un
+corp slăbit și extenuat nu are puterea să lupte şi să
+învingă.\n
+\t\t\t►Unii pacienți au urticarie sau erupții cutanate.
+Urticaria este rezultatul alergiei la medicamente.
+Dacă acestea nu dispar, trebuie să iei legătura cu medicul sau cu asistentul tău medical. Medicul îți poate
+prescrie medicamente pentru a reduce urticaria.\n
+\t\t\t►Unii pacienți au dureri de articulații, dureri de
+cap sau alte dureri. Dacă ai asemenea dureri,
+stai de vorbă cu medicul tău. Medicul va decide
+dacă îți va prescrie niște calmante.
+Ți se pot umfla picioarele. Când stai jos sau
+culcat, încercă să ții picioarele sus, de exemplu,
+pe o pernă; ai mai putea să înfășori în jurul picioarelor un prosop ud sau să faci exerciții fizice
+ușoare.\n
+">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

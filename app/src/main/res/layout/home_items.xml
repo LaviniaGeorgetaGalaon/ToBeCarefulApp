@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/textInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/information"
+        app:civ_border_color="#434343"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/profileImage"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/nameET"
+        android:layout_toRightOf="@+id/nameET"
+        android:orientation="vertical"
+        android:overScrollMode="always"
+        android:padding="10dp"
+        android:scrollbarStyle="insideInset"
+        android:shadowColor="#9F9D9D"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:scrollbarStyle="insideInset"
+            android:shadowColor="#9F9D9D"
+            android:text=""
+            android:verticalScrollbarPosition="defaultPosition" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

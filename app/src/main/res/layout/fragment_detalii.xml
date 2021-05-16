@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="15dp"
+                android:background="@mipmap/back"
+                android:id="@+id/back"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Informatii generale"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/purple_700"
+                android:textColorHint="@color/purple_500"
+                android:textColorLink="@color/purple_500"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar1"
+    android:id="@+id/sv"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbar1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rr1">
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@mipmap/tb"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/poza3"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@id/poza3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/changa"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="7dp"
+            android:text="Ţineți minte: Oricine se poate infecta cu microbul tuberculozei! "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/infTV"
+            android:layout_below="@+id/poza3"
+            android:textColor="@color/black"
+            android:fontFamily="@font/changa"
+            android:textSize="17dp"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="7dp"
+            android:text=" \t\t\t
+           TBC este o boală provocată de o bacterie.Bacteriile sunt organisme mici, invizibile
+cu ochiul liber, care se găsesc pretutindeni, inclusiv în corpul uman. Majoritatea
+bacteriilor sunt inofensive, chiar folositoare, dar unele bacterii sunt periculoase și
+pot provoca boli pe care le numim infecții. Bacteriile care provoacă TBC sunt de tipul
+acesta. Dacă bacteriile se fixează într-o zonă a corpului și se multiplică, iar corpul nu
+reușește să se apere, te poți îmbolnăvi de tuberculoză.
+Bacteria care provocă TBC se numește Mycobacterium tuberculosis sau bacilul
+Koch.
+Cel mai frecvent oamenii se pot îmbolnăvi de TBC la plămâni. Boala apare mai rar
+și în alte părți ale corpului, de exemplu la oase, la nodulii limfatici sau la creier.
+Tuberculoza din afara plămânilor se numește tuberculoză extrapulmonară.\n \n
+\t\t\tTuberculoza este transmisă prin aer prin picături mici (care nu se pot vedea).
+Picăturile ies din nasul și din gura unei persoane contagioase care are boala și
+pătrund în aer când această persoană vorbește, tușește sau strănută. Bacteriile
+tuberculozei se află în unele din aceste picături. Când celelalte persoane inspiră
+acest aer, unele picături cu bacterii le pot intra în corp și pot ajunge la plămânii
+acestora.\n\n
+\t\t\tSe pot îmbolnăvi persoanele care o vreme au avut contact direct cu cineva care
+suferea de tuberculoză pulmonară contagioasă, dar nu începuse tratamentul. Bacteriile tuberculozei nu se transmit cu ușurință, așa că infecțiile apar, în general, la
+persoanele care trăiesc sau petrec mult timp în aceeaşi încăpere împreună.\n
+\t\t\tNu toate persoanele care sunt infectate cu bacteriile tuberculozei se îmbolnăvesc.
+Se estimează că o treime din populația lumii are în corp bacteriile tuberculozei,
+dar puține persoane dezvoltă boala, aproximativ o persoană din 10.\n
+">
+
+        </TextView>
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
+
+
+</RelativeLayout>

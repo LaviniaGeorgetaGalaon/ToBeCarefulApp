@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="15dp"
+                android:background="@mipmap/back"
+                android:id="@+id/back"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:id="@+id/toolbarNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="Meniu"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/info"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Despre noi"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:backgroundTint="@color/white" />
+        <Button
+            android:id="@+id/insta"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Citiți brosura detaliată"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Helpline"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:backgroundTint="@color/white" />
+        <TextView
+            android:id="@+id/signUpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Copyright @ToBeCareful 2021"
+            android:textColor="#B3B1B5"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="30dp"
+            android:id="@+id/infoTelV"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fb"
+            android:text="Helpline anti-anxietate, gratuit | 24 din 24"
+            android:textSize="15dp"/>
+        <Button
+            android:id="@+id/depre"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:layout_below="@id/infoTelV"
+            android:fontFamily="@font/comfortaa"
+            android:layout_marginTop="15dp"
+            android:text="Servicii de consiliere online"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:backgroundTint="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

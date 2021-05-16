@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/ic_wavey_fingerprint__1_"
+    tools:context=".fragments.CreateAccountFragment">
+
+    <TextView
+        android:layout_width="331dp"
+        android:layout_height="109dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Autentificare"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F4EFEF"
+        android:textSize="43sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/text_box"
+            android:fontFamily="@font/changa"
+            android:hint="Email"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/parolaET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/text_box"
+            android:fontFamily="@font/changa"
+            android:hint="Parolă"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/forgotTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Am uitat parola"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll1"
+        android:visibility="gone"
+        android:layout_above="@+id/logInBtn"/>
+
+
+    <Button
+        android:id="@+id/logInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/GoogleSignInBtn"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/comfortaa"
+        android:text="Autentificați-vă"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:backgroundTint="@color/purple_700" />
+
+    <Button
+        android:id="@+id/GoogleSignInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/signUpTV"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/comfortaa"
+        android:text="Conectați-vă cu Google"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:backgroundTint="@color/purple_200" />
+
+    <TextView
+        android:id="@+id/signUpTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Creați un cont"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold" />
+
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+</RelativeLayout>
